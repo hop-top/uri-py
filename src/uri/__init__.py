@@ -1,0 +1,51 @@
+from .completions import CompletionResult, complete_with_scheme
+from .handle import (
+    HandlerSpec,
+    desktop_file,
+    desktop_filename,
+    patch_plist,
+    plist_snippet,
+    snippet,
+    windows_reg_snippet,
+)
+from .registry import Registry, TypeRegistration, new_registry, new_registry_with_policy
+from .scheme import (
+    ActionRoute,
+    AmbiguousVanityError,
+    DefaultPolicy,
+    ParseOptions,
+    Policy,
+    ResolvedAction,
+    URI,
+    VanityAlias,
+    default_policy,
+    parse,
+    resolve_action,
+)
+
+__all__ = [
+    "ActionRoute",
+    "AmbiguousVanityError",
+    "CompletionResult",
+    "DefaultPolicy",
+    "HandlerSpec",
+    "ParseOptions",
+    "Policy",
+    "Registry",
+    "ResolvedAction",
+    "TypeRegistration",
+    "URI",
+    "VanityAlias",
+    "complete_with_scheme",
+    "default_policy",
+    "desktop_file",
+    "desktop_filename",
+    "new_registry",
+    "new_registry_with_policy",
+    "parse",
+    "patch_plist",
+    "plist_snippet",
+    "resolve_action",
+    "snippet",
+    "windows_reg_snippet",
+]

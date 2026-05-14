@@ -1,0 +1,32 @@
+[project]
+name = "hop-top-uri"
+version = "0.1.0-alpha.0"
+description = "Custom URI scheme utilities (polyglot)."
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+  {name = "Idea Crafters LLC", email = "lab@ideacrafters.com"},
+  {name = "Jad Bitar"},
+  {name = "Monaam Benhouria"}
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://hop.top/uri"
+Repository = "https://github.com/hop-top/uri-py"
+Documentation = "https://github.com/hop-top/uri-poly/tree/main/docs/specs"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[build-system]
+requires = ["hatchling>=1.21.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/uri"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
