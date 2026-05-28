@@ -1,3 +1,21 @@
+> [!IMPORTANT]
+> ## Status: Graduated
+>
+> This module's experimental phase shipped successfully — the polyglot
+> URI scheme toolkit graduated to an officially maintained module under a
+> new name: `cite`.
+>
+> - **Source**: [hop-top/poly-cite](https://github.com/hop-top/poly-cite)
+> - **Install**: `pip install hop-top-cite`
+> - **Releases continue at**: [pypi.org/project/hop-top-cite](https://pypi.org/project/hop-top-cite/)
+>
+> This repo is frozen at its last `uri`-named release for historical
+> reference. No new versions will be published here. Adopters consuming
+> through `poly-kit` get the migration transparently; direct adopters
+> should switch imports at their own pace.
+
+---
+
 # uri
 
 Python implementation of `uri`, the polyglot custom URI parsing and
